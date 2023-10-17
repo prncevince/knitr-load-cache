@@ -1,3 +1,6 @@
+library(purrr)
+library(magrittr)
+
 loadCache <- function(f, labels = NULL) {
   top <- ifelse(f == "index", "index", paste0("book/", f))
   if (is.null(labels)) {
